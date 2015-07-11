@@ -1,8 +1,7 @@
 ## Author
 
-Tim Allen 
-
-[rdpeng/ExData_Plotting1](https://github.com/rdpeng/ExData_Plotting1/ "rdpeng/ExData_Plotting1")
+Timothy Chen Allen 
+(Forked from [rdpeng/ExData_Plotting1](https://github.com/rdpeng/ExData_Plotting1/ "rdpeng/ExData_Plotting1") )
 
 ## Introduction
 
