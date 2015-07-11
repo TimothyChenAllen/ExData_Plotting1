@@ -44,6 +44,7 @@ consumption[consumption$Voltage=="?",]$Voltage <- NA
 
 
 ### C. Plot the Data
+png(filename="plot1.png",width=480,height=480)
 # Explore the Global Active Power data with a histogram ###
 # 1) Construct the plot
 hist(consumption$Global_active_power, 
@@ -51,5 +52,4 @@ hist(consumption$Global_active_power,
      xlab="Global Active Power (kilowatts)")
 # 2) and save it to a PNG file with a 
 # width of 480 pixels and a height of 480 pixels.
-dev.copy(png,"plot1.png", width=480, height=480)
 dev.off()

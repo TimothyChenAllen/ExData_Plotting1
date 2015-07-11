@@ -44,11 +44,11 @@ consumption[consumption$Voltage=="?",]$Voltage <- NA
 
 
 ### C. Plot the data
+png(filename="plot2.png",width=480,height=480)
 # Explore the Global active power with a line plot ###
 # 1) Construct the plot
 plot(consumption$datetime, consumption$Global_active_power, typ="l",
      ylab="Global Active Power (kilowatts)", xlab="")
 # 2) and save it to a PNG file with a 
 # width of 480 pixels and a height of 480 pixels.
-dev.copy(png,"plot2.png", width=480, height=480)
 dev.off()

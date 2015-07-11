@@ -43,6 +43,7 @@ consumption[consumption$Sub_metering_3=="?",]$Sub_metering_3 <- NA
 consumption[consumption$Voltage=="?",]$Voltage <- NA
 
 ### C. Plot the data ###
+png(filename="plot4.png",width=480,height=480)
 # Allow 2 x 2 plots
 par(mfrow=c(2,2))
 
@@ -69,5 +70,4 @@ plot(consumption$datetime, consumption$Global_reactive_power, typ="l",
 
 # 2) and save it to a PNG file with a 
 # width of 480 pixels and a height of 480 pixels.
-dev.copy(png,"plot4.png", width=480, height=480)
 dev.off()

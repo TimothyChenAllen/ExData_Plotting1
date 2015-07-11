@@ -44,6 +44,7 @@ consumption[consumption$Voltage=="?",]$Voltage <- NA
 
 
 ### C. Plot the data 
+png(filename="plot3.png",width=480,height=480)
 # Explore the sub_metering consumption with line plots ###
 # 1) Construct the plot
 plot(consumption$datetime, consumption$Sub_metering_1, typ="l",
@@ -53,5 +54,4 @@ lines(consumption$datetime, consumption$Sub_metering_3, typ="l", col="blue")
 legend(x="topright", legend=paste("Sub_metering_",1:3,sep=""), lty=1, col=c("black","red","blue"))
 # 2) and save it to a PNG file with a 
 # width of 480 pixels and a height of 480 pixels.
-dev.copy(png,"plot3.png", width=480, height=480)
 dev.off()
