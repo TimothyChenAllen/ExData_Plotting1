@@ -61,7 +61,7 @@ plot(consumption$datetime, consumption$Sub_metering_1, typ="l",
 lines(consumption$datetime, consumption$Sub_metering_2, typ="l", col="red")
 lines(consumption$datetime, consumption$Sub_metering_3, typ="l", col="blue")
 legend(x="topright", legend=paste("Sub_metering_",1:3,sep=""), lty=1, 
-       bty="n", col=c("black","red","blue"))
+       bty="n", col=c("black","red","blue"), cex=.7)
 
 ### Explore the Global reactive power with a line plot ###
 plot(consumption$datetime, consumption$Global_reactive_power, typ="l",
